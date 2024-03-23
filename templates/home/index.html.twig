@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<section class="flex flex-wrap justify-center items-center min-h-screen">
+    <div >
+        <a class='border border-black rounded-lg p-1' href="{{ path('admin') }}">CRUD</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('coureurs') }}">Liste des coureurs</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('etapes') }}">Liste des etapes</a>
+    <div>
+        <br><br>
+    <div>
+        <a class='border border-black rounded-lg p-1' href="{{ path('exercice1') }}">Exercice 1</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('exercice2') }}">Exercice 2</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('exercice3') }}">Exercice 3</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('exercice4') }}">Exercice 4</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('exercice5') }}">Exercice 5</a>
+        <a class='border border-black rounded-lg p-1' href="{{ path('exercice6') }}">Exercice 6</a
+    </div>
+</section>
+{% endblock %}

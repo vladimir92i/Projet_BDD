@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}exercice 1{% endblock %}
+{% block body %}
+    <div class="flex flex-col text-center">
+        <h1>Exercice 3</h1>
+        <h1>Noms des coureurs qui n'ont pas obtenu de bonifications</h1>
+            <section class="flex justify-center pt-8">
+                <div>
+                    <b>Nom</b>
+                    {% for coureur in coureurs %}
+                    <p>{{ coureur.nom }}</p>
+                    {% endfor %}
+                </div>
+            </section>
+    </div>
+{% endblock %}

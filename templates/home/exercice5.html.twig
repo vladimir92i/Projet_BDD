@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="flex flex-col text-center">
+        <h1>Exercice 5</h1>
+        <h1>Noms des coureurs qui n'ont pas participé au tour</h1>
+            <section class="flex justify-center pt-8">
+                <div>
+                    <b>Nom</b>
+                    <p>
+                        {% for test in data %}
+                            <p>{{ test.nom }}</p>
+                        {% endfor %}
+                    </p>
+                </div>
+            </section>
+    </div>
+{% endblock %}

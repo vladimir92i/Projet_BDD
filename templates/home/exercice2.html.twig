@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="flex flex-col text-center">
+        <h1>Exercice 1</h1>
+        <h1>la composition de l'équipe TOTALENERGIES</h1>
+            <section class="flex justify-center pt-8">
+                <div >
+                    <b>Numero dossard</b>
+                    {% for coureur in coureurs %}
+                    <p>{{ coureur.num_dossard }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <b>Nom</b>
+                    {% for coureur in coureurs %}
+                    <p>{{ coureur.nom }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <b>Pays</b>
+                    {% for coureur in coureurs %}
+                    <p>{{ coureur.pays }}</p>
+                    {% endfor %}
+                </div>
+            </section>
+    </div>
+{% endblock %}
